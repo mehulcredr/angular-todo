@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todo" >
+<head>
+	<meta charset="UTF-8">
+	<title>TODO</title>
+
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!--bower:css-->
+	<!--endbower-->
+</head>
+<body>
+	
+	<div ng-controller="c1" >
+		
+		<h4>TODO List</h4>
+		
+		<ul ng-repeat="task in tasks" >
+			<li>{{task.task_name}}</li>
+			<li>{{task.status}}</li>
+
+		</ul>
+
+	</div>
+
+	<!--bower:js-->
+	<!--endbower-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" ></script>
+	<script src="js/app.js" ></script>
+</body>
+</html>
